@@ -1,8 +1,13 @@
 from django.shortcuts import render
-from .models import Ausrüstung
+from .models import Product
+from rest_framework import generics
+from .serializers import ProductAPISerializer
 
-def ausrüstung(request):
-    ausrüstung = Ausrüstung.objects.all()
-    return render(request, 'ausrüstung.html', {'ausrüstung': ausrüstung})
+#def product(request):
+   # product = Product.objects.all()
+   # return render(request, 'product.html', {'product': product})
 
 # Create your views here.
+class ProductAPIView(generics.ListCreateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductAPISerializer
