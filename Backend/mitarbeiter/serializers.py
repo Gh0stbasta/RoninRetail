@@ -12,6 +12,3 @@ class MitarbeiterSerializer(serializers.ModelSerializer):
         'kills',
         'ehre'
         ]
-
-    def __str__(self):
-        return self.name
