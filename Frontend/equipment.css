@@ -1,0 +1,45 @@
+body {
+    background-color: #f5f5dc;  /* Helle, natürliche Hintergrundfarbe */
+    font-family: 'Noto Sans JP', 'Yu Gothic', 'Arial', sans-serif;  /* Japanische Schriftart */
+    color: #333;  /* Dunkle Schriftfarbe für Kontrast */
+    font-weight: bold;  /* Dickere Schrift */
+}
+
+table {
+    border-collapse: collapse;  /* Rahmen zusammenfassen */
+    width: 55%;  /* Tabelle auf volle Breite */
+    margin: 20px auto;  /* Abstand oben und unten, zentriert horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Schatten für Tiefe */
+}
+
+th, td {
+    border: 2px solid #8B4513;  /* Dunkelbrauner Rahmen */
+    padding: 12px;  /* Innenabstand */
+    text-align: center;  /* Text zentriert */
+    background-color: #fff;  /* Weiße Hintergrundfarbe für Zellen */
+}
+
+th {
+    background-color: #dcdcdc;  /* Hellgraue Hintergrundfarbe für Kopfzeile */
+    font-weight: bold;  /* Fettdruck für Kopfzeile */
+}
+
+button {
+    background-color: #4CAF50;  /* Grüner Hintergrund für Buttons */
+    color: white;  /* Weiße Schriftfarbe */
+    border: none;  /* Kein Rahmen */
+    padding: 10px 15px;  /* Innenabstand */
+    text-align: center;  /* Text zentrieren */
+    text-decoration: none;  /* Keine Unterstreichung */
+    display: inline-block;  /* Inline-Block für Buttons */
+    margin-left: 10px;
+    margin-right: 10px;  /* Abstand zwischen Buttons um 10px größer */
+    cursor: pointer;  /* Zeiger-Cursor bei Hover */
+    border-radius: 5px;  /* Abgerundete Ecken */
+    font-family: 'Noto Sans JP', 'Yu Gothic', 'Arial', sans-serif;  /* Japanische Schriftart */
+    font-weight: bold;  /* Dickere Schrift */
+}
+
+button:hover {
+    background-color: #45a049;  /* Dunklerer Grünton bei Hover */
+}
