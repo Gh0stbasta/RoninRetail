@@ -1,0 +1,4 @@
+Name
+Preis 
+Zustand
+Image
