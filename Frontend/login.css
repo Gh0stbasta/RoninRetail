@@ -1,0 +1,90 @@
+/* Samurai Login */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('images/japanese_mountain_landscape_with_blooming_cherry_blossoms_capturing_the_serene_beauty_of_nature_vib_31jkwqlxgeaokrzayu1e_0.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container1 {
+    /* background: rgba(255, 255, 255, 0.7); */
+    background: linear-gradient(to bottom, rgba(200,200,200), rgba(150,150,150));
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 410px;
+    margin: 200px auto 0;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 92%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    /* background-color: #ff76dd; */
+    background-color: #C41E3A;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #aa1631;
+}
+
+
+
+
+
+
+
+
+
+    
+    
+   
+    

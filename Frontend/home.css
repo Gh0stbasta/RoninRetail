@@ -1,0 +1,89 @@
+:root {
+    --primary-red: #C41E3A;
+    --primary-black: #1A1A1A;
+    --primary-white: #F5F5F5;
+    --accent-gold: #B8860B;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f4f8; /* Heller Hintergrund für mehr Kontrast */  
+    background: url('images/heimdorf.png') no-repeat center center fixed;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}  
+
+.kopfbereich {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    height: 100px;  
+    /* background-color: rgb(255, 255, 255, 0.4);   */
+    padding: 0 20px; /* Abstände hinzugefügt */  
+}  
+
+.header-buttons {  
+    display: flex;  
+}  
+
+ 
+
+.linker-button {  
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}  
+
+.rechter-button {  
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+}  
+img {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 500px; /* make the boxes 30% smaller */
+    margin: 0 auto; /* center the boxes horizontally */
+    display: inline-block; /* display the boxes inline */
+    margin-left: 650px;
+    transition: transform 0.3s; /* add transition for smooth effect */
+}
+
+img:hover {
+    transform: scale(1.1); /* increase the size of the image on hover */
+}
+
+/* img::after {
+    content: attr(alt); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img:hover::after {
+    opacity: 1;
+} */
+

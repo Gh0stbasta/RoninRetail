@@ -1,4 +1,0 @@
-Name
-Preis 
-Zustand
-Image

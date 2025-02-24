@@ -17,6 +17,27 @@ body {
     line-height: 2.5;
     background: linear-gradient(to bottom, rgba(200,200,200,0.6), rgba(119, 119, 119, 0.9)); /* Dickerer Nebel */
 }
+ 
+
+.linker-button {  
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}  
+
+.rechter-button {  
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+} 
 
 .container {
     max-width: 1200px;
@@ -114,20 +135,6 @@ tr:hover {
     transition: background-color 0.3s; 
 }  
 
-.linker-button {  
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}  
-
-.linker-button:hover{
-    background-color: #aa1631;
-} 
-
 .bearbeiten-btn:hover {
     /* background-color: #9A7209; */
     background-color: #696969;
@@ -146,7 +153,12 @@ tr:hover {
 .add-btn:hover {
     background-color: #aa1631;
 }
-  
+
+.linker-button:hover{
+    background-color: #aa1631;
+} 
+
+
 .add-equipment-btn{
     background-color: #000000; /* Sanftes Aqua */  
     color: var(--primary-white);
