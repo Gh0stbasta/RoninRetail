@@ -3,31 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoninRetail Home</title>
+    <title>Samurai Path</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <header>
-        <div class="kopfbereich">
-            <button class="linker-button">zurück</button>
-            <button class="rechter-button">Logout</button>
+
+    <video id="video-background" autoplay muted loop>
+        <source src="images/video_home.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="container">
+        <header>
+            <h1>侍 RoninRetail - Managementsystem</h1>
+            <button class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </header>
+
+        <h2 class="subtitle">Choose your destiny</h2>
+
+        <div class="cards-container">
+            <!-- Samurai Warrior Card -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Samurai Warrior</h3>
+                <p>Choose your character and begin your journey through feudal Japan</p>
+                <button class="action-btn">Select Character</button>
+            </div>
+
+            <!-- Katana Arsenal Card -->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Katana Arsenal</h3>
+                <p>Master legendary blades forged by the greatest swordsmiths</p>
+                <button class="action-btn">Choose Weapons</button>
+            </div>
         </div>
-    </header>
 
-
-
-    
-        <a href="samurai.html">
-            <img class= "bild1" src="images/samuraien.png">
-        </a>
-    
-
-
-    
-        <a href="equipment.html">
-            <img class= "bild2" src="images/waffen_neu.jpg">
-        </a>
-    
+        <!-- Daily Challenges Section
+        <div class="challenges-section">
+            <h2>Daily Challenges</h2>
+            <div class="challenge-card">
+                <div class="challenge-info">
+                    <h3>Master the Way of the Sword</h3>
+                    <p>Complete 3 duels today</p>
+                </div>
+                <div class="challenge-progress">3/5</div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
 
     
 

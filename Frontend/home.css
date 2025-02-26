@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-red: #C41E3A;
     --primary-black: #1A1A1A;
     --primary-white: #F5F5F5;
@@ -11,12 +11,9 @@
 body {  
     margin: 0;  
     font-family: Arial, sans-serif;  
-    background-color: #f0f4f8; /* Heller Hintergrund für mehr Kontrast */  
+    background-color: #f0f4f8;   
     background: url('images/heimdorf.png') no-repeat center center fixed;
     background-size: cover;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }  
 
 .kopfbereich {  
@@ -24,8 +21,7 @@ body {
     justify-content: space-between;  
     align-items: center;  
     height: 100px;  
-    /* background-color: rgb(255, 255, 255, 0.4);   */
-    padding: 0 20px; /* Abstände hinzugefügt */  
+    padding: 0 20px;   
 }  
 
 .header-buttons {  
@@ -58,32 +54,177 @@ img {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    width: 500px; /* make the boxes 30% smaller */
-    margin: 0 auto; /* center the boxes horizontally */
-    display: inline-block; /* display the boxes inline */
+    width: 500px; 
+    margin: 0 auto; 
+    display: inline-block;
     margin-left: 650px;
-    transition: transform 0.3s; /* add transition for smooth effect */
+    transition: transform 0.3s; 
 }
 
 img:hover {
-    transform: scale(1.1); /* increase the size of the image on hover */
-}
-
-/* img::after {
-    content: attr(alt); 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-img:hover::after {
-    opacity: 1;
+    transform: scale(1.1);
 } */
 
+
+
+/* Grundlegende Styles */
+:root {
+    --primary-red: #C41E3A;
+    --text-light: #E0E0E0;
+    --card-bg: #F5F5F5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Arial, sans-serif';
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+                url('path-to-japanese-village.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Container Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.logout-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+/* Card Styles */
+.card {
+    background: var(--card-bg);
+    background: linear-gradient(to bottom, rgba(200,200,200), rgba(150,150,150));
+    border-radius: 16px;
+    padding: 24px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    background: rgba(0, 0, 0, 0.8);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* Button Styles */
+.action-btn {
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 16px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #A01830;
+}
+
+/* Challenges Section */
+.challenges-section {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 32px;
+    background: linear-gradient(to bottom, rgba(200,200,200), rgba(150,150,150));
+}
+
+.challenge-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.challenge-progress {
+    background: var(--primary-red);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        background: linear-gradient(to bottom, rgba(200,200,200), rgba(150,150,150));
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+}
