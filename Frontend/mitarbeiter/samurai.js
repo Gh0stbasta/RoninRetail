@@ -44,7 +44,7 @@ window.onload = function () {
 
         editButton.addEventListener("click", () => {
           // Hier können Sie die Logik zum Bearbeiten der Daten hinzufügen
-          window.location.href = `../bearbeiten.html?id=${mitarbeiter.id}`;
+          window.location.href = `./bearbeiten.html?id=${mitarbeiter.id}`;
         });
 
         deleteButtonCell.appendChild(editButton);
@@ -79,7 +79,7 @@ window.onload = function () {
 
 // Wenn der Erstellen Button gedrückt wird, muss eine neue Seite aufgerufen werden wo wir Daten eingeben können
 document.querySelector(".add-equipment-btn").addEventListener("click", () => {
-  window.location.href = "../erstellen.html";
+  window.location.href = "./erstellen.html";
 });
 
 // Wenn der Bearbeiten Button gedrückt wird, muss eine neue Seite zum Bearbeiten der Daten aufgerufen werden
