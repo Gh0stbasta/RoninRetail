@@ -1,0 +1,213 @@
+/* Global Styles */
+:root {
+    --samurai-red: #C41E3A;
+    --samurai-dark: #1A1A1A;
+    --samurai-light: #E0E0E0;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  /* Page container */
+  .page-container {
+    min-height: 100vh;
+    background-color: var(--samurai-dark);
+    background-image: url('https://images.unsplash.com/photo-1527576539890-dfa815648363');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .backdrop {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Header and back button */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .back-button:hover {
+    color: var(--samurai-red);
+  }
+  
+  .arrow-left {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Add card */
+  .add-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    display: block;
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+    padding: 0 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .input:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  }
+  
+  .input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button group */
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .cancel-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .save-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    background-color: var(--samurai-red);
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    gap: 0.5rem;
+  }
+  
+  .save-button:hover {
+    background-color: rgba(196, 30, 58, 0.8); /* Slightly transparent samurai-red */
+  }
+  
+  .plus-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .add-card {
+      padding: 1rem;
+    }
+    
+    .button-group {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .cancel-button, .save-button {
+      width: 100%;
+    }
+  }

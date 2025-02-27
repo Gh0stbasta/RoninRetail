@@ -1,77 +1,13 @@
-/* :root {
-    --primary-red: #C41E3A;
-    --primary-black: #1A1A1A;
-    --primary-white: #F5F5F5;
-    --accent-gold: #B8860B;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-}
-
-
-
-body {  
-    margin: 0;  
-    font-family: Arial, sans-serif;  
-    background-color: #f0f4f8;   
-    background: url('images/heimdorf.png') no-repeat center center fixed;
-    background-size: cover;
-}  
-
-.kopfbereich {  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    height: 100px;  
-    padding: 0 20px;   
-}  
-
-.header-buttons {  
-    display: flex;  
-}  
-
- 
-
-.linker-button {  
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}  
-
-.rechter-button {  
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;  
-}  
-img {  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    width: 500px; 
-    margin: 0 auto; 
-    display: inline-block;
-    margin-left: 650px;
-    transition: transform 0.3s; 
-}
-
-img:hover {
-    transform: scale(1.1);
-} */
-
-
-
-/* Grundlegende Styles */
 :root {
     --primary-red: #C41E3A;
     --text-light: #E0E0E0;
     --card-bg: #F5F5F5;
+    --samurai-red: #C41E3A;
+    --samurai-dark: #1A1A1A;
+    --samurai-light: #E0E0E0;
+    --white: #FFFFFF;
+    --black: #000000;
+      
 }
 
 body {
@@ -84,6 +20,21 @@ body {
     background-size: cover;
     color: rgb(0, 0, 0);
 }
+
+.back-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .back-button:hover {
+    color: var(--samurai-red);
+  }
 
 #video-background {
     position: fixed;
@@ -138,8 +89,8 @@ h1 {
 /* Card Styles */
 .card {
     background: var(--card-bg);
-    background: linear-gradient(to bottom, rgba(200,200,200), rgba(150,150,150));
-    border-radius: 16px;
+    background: linear-gradient(to bottom, rgba(200,200,200), rgba(137, 143, 131));
+    border-radius: 16px; 
     padding: 24px;
     width: 300px;
     height: 400px;
@@ -151,14 +102,31 @@ h1 {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
-.card-icon {
-    background: rgba(0, 0, 0, 0.8);
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
+.card-icon1 {
+    background: rgba(137, 143, 131, 0.8);
+    background-image: url('images/helm.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.card-icon2 {
+    background: rgba(137, 143, 131, 0.8); 
+    background-image: url('images/katana.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height:100px;
+    border-radius: 35px;
     display: flex;
     align-items: center;
     justify-content: center;

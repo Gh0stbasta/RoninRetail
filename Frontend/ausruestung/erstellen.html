@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinzufügen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ausrüstung - hinzufügen</title>
+  <link rel="stylesheet" href="erstellen.css">
+  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.min.css" rel="stylesheet">
 </head>
 <body>
-    Ausrüstung hinzugefügt
+  <div class="page-container">
+    <div class="backdrop">
+      <div class="container">
+        <div class="header">
+          <button class="back-button" onclick="window.location.href='/equipment'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-left">
+              <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+            Zurück
+          </button>
+        </div>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="add-card">
+          <h1 class="title">Ausrüstung hinzufügen</h1>
+          <form id="equipmentForm" class="form">
+            <div class="form-group">
+              <label class="label">Name</label>
+              <input type="text" id="name" class="input" placeholder="Name des Equipments">
+            </div>
+            <div class="form-group">
+              <label class="label">Zustand</label>
+              <input type="number" id="zustand" class="input" placeholder="Zustand (1-10)">
+            </div>
+            <div class="form-group">
+              <label class="label">Preis</label>
+              <input type="number" id="preis" class="input" placeholder="Preis in €">
+            </div>
+            <div class="form-group">
+              <label class="label">Image</label>
+              <input type="number" id="image" class="input" placeholder="Bild ID">
+            </div>
+            <div class="button-group">
+              <button type="button" class="cancel-button" onclick="window.location.href='/equipment'">
+                Abbrechen
+              </button>
+              <button type="submit" class="save-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="plus-icon">
+                  <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                Hinzufügen
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <label for="Zustand">Zustand:</label>
-        <textarea id="description" name="description" required></textarea>
-
-        <label for="Preis">Preis:</label>
-        <input type="number" id="price" name="price" required>
-
-        <label for="Image">Image:</label>
-        <input type="image" id="image" name="image" required>
-
-        <button type="submit">Hinzufügen</button>
-    </form>
-    
+  <script src="erstellen.js"></script>
 </body>
 </html>

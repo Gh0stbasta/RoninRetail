@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samurai Path</title>
+    <title>侍 RoninRetail - home</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -19,6 +19,12 @@
             <button class="logout-btn">
                 <i class="fas fa-sign-out-alt"></i>
             </button>
+            <button class="back-button" onclick="window.location.href='/equipment'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-left">
+                  <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                </svg>
+                Zurück
+              </button>
         </header>
 
         <h2 class="subtitle">Choose your destiny</h2>
@@ -26,21 +32,21 @@
         <div class="cards-container">
             <!-- Samurai Warrior Card -->
             <div class="card">
-                <div class="card-icon">
+                <div class="card-icon1">
                     <i class="fas fa-user"></i>
                 </div>
                 <h3>Samurai Warrior</h3>
-                <p>Choose your character and begin your journey through feudal Japan</p>
+                <p>Choose, edit or add your character and start your journey</p>
                 <button class="action-btn">Select Character</button>
             </div>
 
             <!-- Katana Arsenal Card -->
             <div class="card">
-                <div class="card-icon">
+                <div class="card-icon2">
                     <i class="fas fa-gavel"></i>
                 </div>
-                <h3>Katana Arsenal</h3>
-                <p>Master legendary blades forged by the greatest swordsmiths</p>
+                <h3>Arsenal of weapons</h3>
+                <p>Choose, change or add the strongest weapons for your battle</p>
                 <button class="action-btn">Choose Weapons</button>
             </div>
         </div>

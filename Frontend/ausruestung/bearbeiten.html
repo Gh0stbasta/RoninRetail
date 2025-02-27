@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkt bearbeiten</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ausrüstung - bearbeiten</title>
+  <link rel="stylesheet" href="bearbeiten.css">
+  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.min.css" rel="stylesheet">
 </head>
 <body>
+  <div class="page-container">
+    <div class="backdrop">
+      <div class="container">
+        <div class="header">
+          <button class="back-button" onclick="window.location.href='/equipment'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-left">
+              <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+            Zurück
+          </button>
+        </div>
 
-Ausrüstung bearbeiten 
-    
+        <div class="edit-card">
+          <h1 class="title">Ausrüstung bearbeiten</h1>
+          <form id="equipmentForm" class="form">
+            <div class="form-group">
+              <label class="label">Name</label>
+              <input type="text" id="name" class="input" value="">
+            </div>
+            <div class="form-group">
+              <label class="label">Zustand</label>
+              <input type="number" id="zustand" class="input" value="">
+            </div>
+            <div class="form-group">
+              <label class="label">Preis</label>
+              <input type="number" id="preis" class="input" value="">
+            </div>
+            <div class="button-group">
+              <button type="button" class="cancel-button" onclick="window.location.href='/equipment'">
+                Abbrechen
+              </button>
+              <button type="submit" class="save-button">
+                Speichern
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bearbeiten.js"></script>
+
+
 </body>
 </html>
