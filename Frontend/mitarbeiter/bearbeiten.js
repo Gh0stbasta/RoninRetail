@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get("id");
+  const mitarbeiterId = urlParams.get("id");
 
-  if (productId) {
+  if (mitarbeiterId) {
     try {
       const response = await fetch(
-        `http://localhost:8000/product/${productId}`
+        `http://localhost:8000/mitarbeiter/${mitarbeiterId}`
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -14,9 +14,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.log(data);
       // Populate your form or UI with the fetched data
       document.getElementById("name").value = data.name;
-      document.getElementById("zustand").value = data.zustand;
-      document.getElementById("preis").value = data.preis;
-      document.getElementById("imagePreview").src = data.image;
+      document.getElementById("status").value = data.status;
+      document.getElementById("herkunft").value = data.herkunft;
+      document.getElementById("kills").value = data.kills;
+      document.getElementById("ehre").value = data.ehre;
+      document.getElementById("imagePreview").src = data.bild;
     } catch (error) {
       console.error(
         "There has been a problem with your fetch operation:",
@@ -32,23 +34,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     .addEventListener("submit", async (event) => {
       event.preventDefault();
 
-      if (!productId) {
+      if (!mitarbeiterId) {
         console.error("No mitarbeiter ID found in query parameters");
         return;
       }
 
       const serverObjekt = new FormData();
-      serverObjekt.append("id", productId);
+      serverObjekt.append("id", mitarbeiterId);
       serverObjekt.append("name", document.getElementById("name").value);
-      serverObjekt.append("zustand", document.getElementById("zustand").value);
+      serverObjekt.append("status", document.getElementById("status").value);
       serverObjekt.append(
-        "preis",
-        document.getElementById("preis").value
+        "herkunft",
+        document.getElementById("herkunft").value
       );
-      serverObjekt.append("image", document.getElementById("image").files[0]);
+      serverObjekt.append("kills", document.getElementById("kills").value);
+      serverObjekt.append("ehre", document.getElementById("ehre").value);
+      serverObjekt.append("bild", document.getElementById("image").files[0]);
       try {
         const response = await fetch(
-          `http://localhost:8000/product/${productId}/`,
+          `http://localhost:8000/mitarbeiter/${mitarbeiterId}/`,
           {
             method: "PUT",
             body: serverObjekt,
@@ -61,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const result = await response.json();
         console.log("Success:", result);
-        window.location.href = "./equipment.html";
+        window.location.href = "./samurai.html";
       } catch (error) {
         console.error(
           "There has been a problem with your fetch operation:",

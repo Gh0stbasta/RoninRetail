@@ -1,167 +1,168 @@
 :root {
-    --primary-red: #C41E3A;
-    --primary-black: #1A1A1A;
-    --primary-white: #F5F5F5;
-    --accent-gold: #B8860B;
-    --shadow-color: rgba(0, 0, 0, 0.2);
+  --primary-red: #c41e3a;
+  --primary-black: #1a1a1a;
+  --primary-white: #f5f5f5;
+  --accent-gold: #b8860b;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
-
 
 body {
-    /* background: url('C:/Users/raslantekin/VSCODE - US IT 2024 Sommer FIAE E/samurarai kopie/images/japanese_mountain_landscape_with_blooming_cherry_blossom.png') no-repeat center center fixed;
+  /* background: url('C:/Users/raslantekin/VSCODE - US IT 2024 Sommer FIAE E/samurarai kopie/images/japanese_mountain_landscape_with_blooming_cherry_blossom.png') no-repeat center center fixed;
     background-size: cover; */
-    background: linear-gradient(to bottom, rgba(200,200,200,0.8), rgba(150,150,150,0.6)); /* Hellgrauer Nebel */
-    color: var(--primary-black);
-    line-height: 3.5;
-    color: var(--primary-black);
-    line-height: 2.5;
-    background: linear-gradient(to bottom, rgba(200,200,200,0.6), rgba(119, 119, 119, 0.9)); /* Dickerer Nebel */
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 200, 200, 0.8),
+    rgba(150, 150, 150, 0.6)
+  ); /* Hellgrauer Nebel */
+  color: var(--primary-black);
+  line-height: 3.5;
+  color: var(--primary-black);
+  line-height: 2.5;
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 200, 200, 0.6),
+    rgba(119, 119, 119, 0.9)
+  ); /* Dickerer Nebel */
 }
- 
 
-.linker-button {  
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}  
+.linker-button {
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-.rechter-button {  
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;  
-} 
+.rechter-button {
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    color: var(--primary-red);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px var(--shadow-color);
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-red);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    text-shadow: 8px 8px 9px var(--shadow-color);
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 8px 8px 9px var(--shadow-color);
 }
 
-.schrift{
-    color: #1A1A1A;
+.schrift {
+  color: #1a1a1a;
 }
-
-
 
 section {
-    margin-bottom: 40px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px var(--shadow-color);
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 h2 {
-    color: var(--primary-red);
-    margin-bottom: 20px;
-    border-bottom: 2px solid var(--primary-red);
-    padding-bottom: 10px;
+  color: var(--primary-red);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-red);
+  padding-bottom: 10px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: var(--primary-black);
-    color: var(--primary-white);
+  background-color: var(--primary-black);
+  color: var(--primary-white);
 }
 
 tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 tr:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
+.kopfbereich {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(255, 255, 255, 0.4); /* Sanftes Rosa */
+  padding: 0 20px; /* Abstände hinzugefügt */
+}
 
-.kopfbereich {  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    height: 100px;  
-    background-color: rgb(255, 255, 255, 0.4); /* Sanftes Rosa */  
-    padding: 0 20px; /* Abstände hinzugefügt */  
-}  
-  
-
-
-.bearbeiten-btn {  
-    /* background-color: #d3aa43;    */
-    background-color: #8d8d8d;
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}  
+.bearbeiten-btn {
+  /* background-color: #d3aa43;    */
+  background-color: #8d8d8d;
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
 .bearbeiten-btn:hover {
-    /* background-color: #9A7209; */
-    background-color: #696969;
+  /* background-color: #9A7209; */
+  background-color: #696969;
 }
 
 .add-btn {
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .add-btn:hover {
-    background-color: #aa1631;
+  background-color: #aa1631;
 }
 
-.linker-button:hover{
-    background-color: #aa1631;
-} 
+.linker-button:hover {
+  background-color: #aa1631;
+}
 
-
-.add-equipment-btn{
-    background-color: #000000; /* Sanftes Aqua */  
-    color: var(--primary-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.add-equipment-btn {
+  background-color: #000000; /* Sanftes Aqua */
+  color: var(--primary-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 /* .add-equipment-btn:hover{
@@ -169,26 +170,20 @@ tr:hover {
     
 } */
 
-
-  
-img {  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    width: 500px; /* make the boxes 30% smaller */
-    margin: 0 auto; /* center the boxes horizontally */
-    display: inline-block; /* display the boxes inline */
-    margin-left: 650px;
-    transition: transform 0.3s; /* add transition for smooth effect */
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  margin: 0 auto; /* center the boxes horizontally */
+  transition: transform 0.3s; /* add transition for smooth effect */
 }
 
 img:hover {
-    transform: scale(1.1); /* increase the size of the image on hover */
+  transform: scale(1.1); /* increase the size of the image on hover */
 }
 
-.add-equipment-btn{
-    margin-bottom: 20px;
+.add-equipment-btn {
+  margin-bottom: 20px;
 }
-
- 

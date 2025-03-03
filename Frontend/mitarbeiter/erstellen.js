@@ -1,7 +1,4 @@
-document.getElementById("cancel-button").addEventListener("click", function () {
-  window.location.href = "./equipment.html";
-});
-
+// Füge einen Event-Listener zum Formular hinzu, der auf das 'submit'-Ereignis reagiert
 document
   .getElementById("equipmentForm")
   .addEventListener("submit", function (e) {
@@ -11,21 +8,24 @@ document
     // Erstelle ein FormData-Objekt aus dem Formular
     const serverObjekt = new FormData();
     serverObjekt.append("name", document.getElementById("name").value);
-    serverObjekt.append("zustand", document.getElementById("zustand").value);
-    serverObjekt.append("preis", document.getElementById("preis").value);
-    serverObjekt.append("image", document.getElementById("image").files[0]);
+    serverObjekt.append("status", document.getElementById("status").value);
+    serverObjekt.append("herkunft", document.getElementById("herkunft").value);
+    serverObjekt.append("kills", document.getElementById("kills").value);
+    serverObjekt.append("ehre", document.getElementById("ehre").value);
+    serverObjekt.append("bild", document.getElementById("image").files[0]);
+  
 
     // Sende die Formulardaten an den Server
-    fetch("http://localhost:8000/product/", {
+    fetch("http://localhost:8000/mitarbeiter/", {
       method: "POST", // HTTP-Methode POST
-      body: serverObjekt, // Formulardaten als JSON-String
+      body: serverObjekt, // Formulardaten
     })
       .then((response) => response.json()) // Konvertiere die Antwort in JSON
       .then((data) => {
         // Erfolgreiche Antwort vom Server
         console.log("Success:", data); // Logge die Erfolgsnachricht
         // Leite den Benutzer zur Seite '/equipment' weiter
-        window.location.href = "./equipment.html";
+        window.location.href = "./samurai.html";
       })
       .catch((error) => {
         // Fehler bei der Anfrage

@@ -10,5 +10,6 @@ class MitarbeiterSerializer(serializers.ModelSerializer):
         'status',
         'herkunft',
         'kills',
-        'ehre'
+        'ehre',
+        'bild'
         ]

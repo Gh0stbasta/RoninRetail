@@ -33,7 +33,9 @@ window.onload = function () {
         row.appendChild(ehreCell);
 
         const imageCell = document.createElement("td");
-        imageCell.textContent = mitarbeiter.image;
+        const image = document.createElement("img");
+        image.src = mitarbeiter.bild; // Vollständige URL verwenden
+        imageCell.appendChild(image);
         row.appendChild(imageCell);
 
         const deleteButtonCell = document.createElement("td");

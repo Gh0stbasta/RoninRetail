@@ -29,14 +29,19 @@
             </div>
             <div class="form-group">
               <label class="label">Zustand</label>
-              <input type="number" id="zustand" class="input" value="">
+              <input type="text" id="zustand" class="input" value="">
             </div>
             <div class="form-group">
               <label class="label">Preis</label>
               <input type="number" id="preis" class="input" value="">
             </div>
+            <div class="form-group"></div>
+            <label class="label">Image</label>
+            <input type="file" id="image" class="input" accept="image/*" onchange="previewImage(event)" />
+            <img id="imagePreview" src="" alt="Placeholder Image" class="image-preview" />
+            </div>
             <div class="button-group">
-              <button type="button" class="cancel-button" onclick="window.location.href='/equipment'">
+              <button type="button" id="cancel-button" class="cancel-button">
                 Abbrechen
               </button>
               <button type="submit" class="save-button">
