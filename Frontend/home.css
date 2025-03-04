@@ -84,6 +84,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 32px 0;
+    padding: 75px;
 }
 
 /* Card Styles */

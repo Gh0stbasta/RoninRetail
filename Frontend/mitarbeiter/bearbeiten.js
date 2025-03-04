@@ -49,7 +49,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       );
       serverObjekt.append("kills", document.getElementById("kills").value);
       serverObjekt.append("ehre", document.getElementById("ehre").value);
-      serverObjekt.append("bild", document.getElementById("image").files[0]);
+      const imageFile = document.getElementById("image").files[0];
+      if (imageFile) {
+        serverObjekt.append("bild", imageFile);
+      } else {
+        serverObjekt.append("bild", document.getElementById("imagePreview").src);
+      }
       try {
         const response = await fetch(
           `http://localhost:8000/mitarbeiter/${mitarbeiterId}/`,

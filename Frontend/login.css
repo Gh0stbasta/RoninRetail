@@ -24,11 +24,11 @@ body {
 .container1 {
     /* background: rgba(255, 255, 255, 0.7); */
     background: linear-gradient(to bottom, rgba(200,200,200), rgba(150,150,150));
-    padding: 20px;
+    padding: 60px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 410px;
+    width: 550px;
     margin: 200px auto 0;
 }
 
