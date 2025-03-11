@@ -1,2 +1,2 @@
 # RoninRetail
-Das Warenwirtschaftssystem der SyntaxSamurai
+Das Warenwirtschaftssystem der SyntaxSamurai 2025
